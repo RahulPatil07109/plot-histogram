@@ -36,6 +36,9 @@ const Charts = () => {
           {
             label: "Word Count",
             data: first20Words.map((data) => data[1]),
+            borderWidth: 1,
+            barPercentage: 1,
+            categoryPercentage: 1,
           },
         ],
       };
