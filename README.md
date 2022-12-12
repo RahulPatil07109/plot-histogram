@@ -1,5 +1,7 @@
-#Deployment Link 
-``
+# Deployment Link 
+
+[https://plot-histogram-rahul07109.netlify.app/]
+
 ## About
 
 Developed a frontend in Reactjs , which does the following:
