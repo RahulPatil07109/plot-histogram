@@ -16,7 +16,7 @@ const Charts = () => {
       const text = await response.text();
 
       // splits the text into array
-      const words = text.split(" ");
+      const words = text.split(/[ \n]+/);
       const wordCounts = new Map();
       // finds count of each word
       for (const word of words) {
@@ -28,6 +28,7 @@ const Charts = () => {
       }
       // sorts in descending order
       const sortedWords = [...wordCounts].sort((a, b) => b[1] - a[1]);
+      console.log(sortedWords);
       // Gets 20 most occurring words.
       const first20Words = sortedWords.splice(0, 20);
       const obj = {
